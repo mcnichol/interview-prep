@@ -1,11 +1,33 @@
 package com.mcnichol.interviewing.sorting;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameter;
+import org.junit.runners.Parameterized.Parameters;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 
 import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
-public class SelectionSortTest {
+@RunWith(Parameterized.class)
+public class SorterTesting {
+
+    @Parameters(name = "{index}: Sorting Class: {0}")
+    public static Collection<Object[]> classesAndMethods() {
+        List<Object[]> list = new ArrayList<>();
+        list.add(new Object[]{SelectionSort.class});
+        list.add(new Object[]{InsertionSort.class});
+
+        return list;
+    }
+
+    @Parameter
+    public Class clazz;
+
     @Test
     public void sortsRandomListOfThree() throws Exception {
         Integer[] objects = new Integer[3];
@@ -14,14 +36,15 @@ public class SelectionSortTest {
         objects[1] = 0;
         objects[2] = 1;
 
-        Sorter selectionSort = new SelectionSort();
+        Sorter sorter = (Sorter) clazz.getConstructor().newInstance();
 
-        selectionSort.sort(objects);
+        sorter.sort(objects);
 
         assertThat(objects[0], is(0));
         assertThat(objects[1], is(1));
         assertThat(objects[2], is(2));
     }
+
 
     @Test
     public void sortsRandomListOfTen() throws Exception {
@@ -38,9 +61,9 @@ public class SelectionSortTest {
         objects[8] = 6;
         objects[9] = 8;
 
-        Sorter selectionSort = new SelectionSort();
+        Sorter sorter = (Sorter) clazz.getConstructor().newInstance();
 
-        selectionSort.sort(objects);
+        sorter.sort(objects);
 
         assertThat(objects[0], is(0));
         assertThat(objects[1], is(1));

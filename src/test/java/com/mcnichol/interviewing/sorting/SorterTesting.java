@@ -16,8 +16,8 @@ import static org.junit.Assert.assertThat;
 @RunWith(Parameterized.class)
 public class SorterTesting {
 
-    @Parameters(name = "{index}: Sorting Class: {0}")
-    public static Collection<Object[]> classesAndMethods() {
+    @Parameters(name = "{index}: Sort Type: {0}")
+    public static Collection<Object[]> classes() {
         List<Object[]> list = new ArrayList<>();
         list.add(new Object[]{SelectionSort.class});
         list.add(new Object[]{InsertionSort.class});
@@ -44,7 +44,6 @@ public class SorterTesting {
         assertThat(objects[1], is(1));
         assertThat(objects[2], is(2));
     }
-
 
     @Test
     public void sortsRandomListOfTen() throws Exception {

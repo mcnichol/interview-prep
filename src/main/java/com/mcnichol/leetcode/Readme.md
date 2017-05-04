@@ -1,8 +1,13 @@
-#Companies:
-* [Yahoo](#yahoo)
+# Companies:
+
+* ###[Adobe](#adobe)
+* ###[Yahoo](#yahoo)
+* ###[Yahoo](#yahoo)
+* ###[Yahoo](#yahoo)
+* ###[Yahoo](#yahoo)
 
 <table align="center">
-    <tr><th colspan="4"><h2>Adobe(12)</h2></th></tr>
+    <tr><th colspan="4"><h2><p href="#adobe">Adobe(12)</p></h2></th></tr>
     <tr><th>ID</th><th>Name</th><th>% Accepted</th><th>Difficulty</th></tr>
     <tr><td>1</td><td><a href="https://leetcode.com/problems/two-sum/#/description">Two Sum</a></td><td>23.0%</td><td>Easy</td></tr>
     <tr><td>2</td><td><a href="https://leetcode.com/problems/add-two-numbers/#/description">Add Two Numbers</a></td><td>23.0%</td><td>Medium</td></tr>

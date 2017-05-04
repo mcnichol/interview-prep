@@ -9,9 +9,11 @@ import org.junit.runners.Parameterized.Parameters;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Random;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertTrue;
 
 @RunWith(Parameterized.class)
 public class SorterTesting {
@@ -21,6 +23,7 @@ public class SorterTesting {
         List<Object[]> list = new ArrayList<>();
         list.add(new Object[]{SelectionSort.class});
         list.add(new Object[]{InsertionSort.class});
+        list.add(new Object[]{ShellSort.class});
 
         return list;
     }
@@ -74,5 +77,21 @@ public class SorterTesting {
         assertThat(objects[7], is(7));
         assertThat(objects[8], is(8));
         assertThat(objects[9], is(9));
+    }
+
+    @Test
+    public void sortsRandomListOf100() throws Exception {
+        Integer[] objects = new Integer[100];
+        for(int i = 0; i < objects.length; i++){
+            objects[i] = (int) (Math.random() * 100);
+        }
+
+        Sorter sorter = (Sorter) clazz.getConstructor().newInstance();
+
+        sorter.sort(objects);
+
+        for(int i =0; i < objects.length - 1; i++){
+            assertTrue(objects[i] <= objects[i + 1]);
+        }
     }
 }

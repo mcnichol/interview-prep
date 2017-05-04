@@ -1,4 +1,4 @@
-<table border=2 bordercolor=grey>
+<table>
     <tr><th colspan="4"><h2>Adobe(12)</h2></th></tr>
     <tr><th>ID</th><th>Name</th><th>% Accepted</th><th>Difficulty</th></tr>
     <tr><td>1</td><td><a href="https://leetcode.com/problems/two-sum/#/description">Two Sum</a></td><td>23.0%</td><td>Easy</td></tr>
@@ -15,7 +15,7 @@
     <tr><td>292</td><td><a href="https://leetcode.com/problems/nim-game/#/description">Nim Game</a></td><td>52.7%</td><td>Easy</td></tr>
 </table>
 
-<table border=2 bordercolor=grey>
+<table>
     <tr><th colspan="4"><h2>Airbnb(20)</h2></th></tr>
     <tr><th>ID</th><th>Name</th><th>% Accepted</th><th>Difficulty</th></tr>
     <tr><td>1</td><td><a href="https://leetcode.com/problems/two-sum/#/description">Two Sum</a></td><td>23.0%</td><td>Easy</td></tr>
@@ -40,7 +40,7 @@
     <tr><td>336</td><td><a href="https://leetcode.com/problems/palindrome-pairs/#/description">Palindrome Pairs</a></td><td>19.5%</td><td>Hard</td></tr>
 </table>
 
-<table border=2 bordercolor=grey>
+<table>
     <tr><th colspan="4"><h2>Amazon(41)</h2></th></tr>
     <tr><th>ID</th><th>Name</th><th>% Accepted</th><th>Difficulty</th></tr>
     <tr><td>1</td><td><a href="https://leetcode.com/problems/two-sum/#/description">Two Sum</a></td><td>23.0%</td><td>Easy</td></tr>
@@ -86,7 +86,7 @@
     <tr><td>297</td><td><a href="https://leetcode.com/problems/serialize-and-deserialize-binary-tree/#/description">Serialize and Deserialize Binary Tree</a></td><td>27.8%</td><td>Hard</td></tr>
 </table>
 
-<table border=2 bordercolor=grey>
+<table>
     <tr><th colspan="4"><h2>Apple(28)</h2></th></tr>
     <tr><th>ID</th><th>Name</th><th>% Accepted</th><th>Difficulty</th></tr>
     <tr><td>1</td><td><a href="https://leetcode.com/problems/two-sum/#/description">Two Sum</a></td><td>23.0%</td><td>Easy</td></tr>
@@ -119,7 +119,7 @@
     <tr><td>284</td><td>Peeking Iterator</td><td>33.5%</td><td>Medium</td></tr>
 </table>
 
-<table border=2 bordercolor=grey>
+<table>
     <tr><th colspan="4"><h2>Bloomberg(57)</h2></th></tr>
     <tr><th>ID</th><th>Name</th><th>% Accepted</th><th>Difficulty</th></tr>
     <tr><td>1</td><td><a href="https://leetcode.com/problems/two-sum/#/description">Two Sum</a></td><td>23.0%</td><td>Easy</td></tr>
@@ -181,7 +181,7 @@
     <tr><td>297</td><td><a href="https://leetcode.com/problems/serialize-and-deserialize-binary-tree/#/description">Serialize and Deserialize Binary Tree</a></td><td>27.8%</td><td>Hard</td></tr>
 </table>
 
-<table border=2 bordercolor=grey>
+<table>
     <tr><th colspan="4"><h2>Dropbox(7)</h2></th></tr>
     <tr><th>ID</th><th>Name</th><th>% Accepted</th><th>Difficulty</th></tr>
     <tr><td>1</td><td><a href="https://leetcode.com/problems/two-sum/#/description">Two Sum</a></td><td>23.0%</td><td>Easy</td></tr>
@@ -193,7 +193,7 @@
     <tr><td>291</td><td>Word Pattern II</td><td>34.8%</td><td>Hard</td></tr>
 </table>
 
-<table border=2 bordercolor=grey>
+<table>
     <tr><th colspan="4"><h2>Facebook(79)</h2></th></tr>
     <tr><th>ID</th><th>Name</th><th>% Accepted</th><th>Difficulty</th></tr>
     <tr><td>1</td><td><a href="https://leetcode.com/problems/two-sum/#/description">Two Sum</a></td><td>23.0%</td><td>Easy</td></tr>
@@ -276,7 +276,7 @@
     <tr><td>334</td><td><a href="https://leetcode.com/problems/increasing-triplet-subsequence/#/description">Increasing Triplet Subsequence</a></td><td>33.2%</td><td>Medium</td></tr>
 </table>
 
-<table border=2 bordercolor=grey>
+<table>
     <tr><th colspan="4"><h2>Google(90)</h2></th></tr>
     <tr><th>ID</th><th>Name</th><th>% Accepted</th><th>Difficulty</th></tr>
     <tr><td>4</td><td><a href="https://leetcode.com/problems/median-of-two-sorted-arrays/#/description">Median of Two Sorted Arrays</a></td><td>18.6%</td><td>Hard</td></tr>
@@ -371,7 +371,7 @@
     <tr><td>341</td><td>Flatten Nested List Iterator</td><td>19.8%</td><td>Medium</td></tr>
 </table>
 
-<table border=2 bordercolor=grey>
+<table>
     <tr><th colspan="4"><h2>LinkedIn(39)</h2></th></tr>
     <tr><th>ID</th><th>Name</th><th>% Accepted</th><th>Difficulty</th></tr>
     <tr><td>1</td><td><a href="https://leetcode.com/problems/two-sum/#/description">Two Sum</a></td><td>23.0%</td><td>Easy</td></tr>
@@ -415,7 +415,7 @@
     <tr><td>339</td><td>Nested List Weight Sum</td><td>54.7%</td><td>Easy</td></tr>
 </table>
 
-<table border=2 bordercolor=grey>
+<table>
     <tr><th colspan="4"><h2>Microsoft(77)</h2></th></tr>
     <tr><th>ID</th><th>Name</th><th>% Accepted</th><th>Difficulty</th></tr>
     <tr><td>1</td><td><a href="https://leetcode.com/problems/two-sum/#/description">Two Sum</a></td><td>23.0%</td><td>Easy</td></tr>
@@ -497,7 +497,7 @@
     <tr><td>333</td><td>Largest BST Subtree</td><td>26.5%</td><td>Medium</td></tr>
 </table>
 
-<table border=2 bordercolor=grey>
+<table>
     <tr><th colspan="4"><h2>Palantir(7)</h2></th></tr>
     <tr><th>ID</th><th>Name</th><th>% Accepted</th><th>Difficulty</th></tr>
     <tr><td>136</td><td><a href="https://leetcode.com/problems/single-number/#/description">Single Number</a></td><td>49.6%</td><td>Medium</td></tr>
@@ -509,7 +509,7 @@
     <tr><td>325</td><td><a href="https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/#/description">Maximum Size Subarray Sum Equals k</a></td><td>39.9%</td><td>Easy</td></tr>
 </table>
 
-<table border=2 bordercolor=grey>
+<table>
     <tr><th colspan="4"><h2>Snapchat(15)</h2></th></tr>
     <tr><th>ID</th><th>Name</th><th>% Accepted</th><th>Difficulty</th></tr>
     <tr><td>36</td><td>Valid Sudoku</td><td>30.5%</td><td>Easy</td></tr>
@@ -529,7 +529,7 @@
     <tr><td>314</td><td><a href="https://leetcode.com/problems/binary-tree-vertical-order-traversal/#/description">Binary Tree Vertical Order Traversal</a></td><td>30.3%</td><td>Medium</td></tr>
 </table>
 
-<table border=2 bordercolor=grey>
+<table>
     <tr><th colspan="4"><h2>Twitter(21)</h2></th></tr>
     <tr><th>ID</th><th>Name</th><th>% Accepted</th><th>Difficulty</th></tr>
     <tr><td>10</td><td><a href="https://leetcode.com/problems/regular-expression-matching/#/description">Regular Expression Matching</a></td><td>22.0%</td><td>Hard</td></tr>
@@ -555,7 +555,7 @@
     <tr><td>296</td><td>Best Meeting Point</td><td>46.7%</td><td>Hard</td></tr>
 </table>
 
-<table border=2 bordercolor=grey>
+<table>
     <tr><th colspan="4"><h2>Uber(42)</h2></th></tr>
     <tr><th>ID</th><th>Name</th><th>% Accepted</th><th>Difficulty</th></tr>   
     <tr><td>1</td><td><a href="https://leetcode.com/problems/two-sum/#/description">Two Sum</a></td><td>23.0%</td><td>Easy</td></tr>
@@ -602,7 +602,7 @@
     <tr><td>337</td><td>House Robber III</td><td>37.0%</td><td>Medium</td></tr>
 </table>
 
-<table border=2 bordercolor=grey>
+<table>
     <tr><th colspan="4"><h2>Yahoo(11)</h2></th></tr>
     <tr><th>ID</th><th>Name</th><th>% Accepted</th><th>Difficulty</th></tr>
     <tr><td>1</td><td><a href="https://leetcode.com/problems/two-sum/#/description">Two Sum</a></td><td>23.0%</td><td>Easy</td></tr>
@@ -618,7 +618,7 @@
     <tr><td>297</td><td><a href="https://leetcode.com/problems/serialize-and-deserialize-binary-tree/#/description">Serialize and Deserialize Binary Tree</a></td><td>27.8%</td><td>Hard</td></tr>
 </table>
 
-<table border=2 bordercolor=grey>
+<table>
     <tr><th colspan="4"><h2>Yelp(12)</h2></th></tr>
     <tr><th>ID</th><th>Name</th><th>% Accepted</th><th>Difficulty</th></tr>
     <tr><td>1</td><td><a href="https://leetcode.com/problems/two-sum/#/description">Two Sum</a></td><td>23.0%</td><td>Easy</td></tr>
@@ -635,7 +635,7 @@
     <tr><td>242</td><td>Valid Anagram</td><td>41.7%</td><td>Easy</td></tr>
 </table>
 
-<table border=2 bordercolor=grey>
+<table>
     <tr><th colspan="4"><h2>Zenefit(21)</h2></th></tr>
     <tr><th>ID</th><th>Name</th><th>% Accepted</th><th>Difficulty</th></tr>
     <tr><td>4</td><td><a href="https://leetcode.com/problems/median-of-two-sorted-arrays/#/description">Median of Two Sorted Arrays</a></td><td>18.6%</td><td>Hard</td></tr>

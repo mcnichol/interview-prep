@@ -3,20 +3,28 @@ package com.mcnichol.interviewing.sorting;
 public class SelectionSort implements Sorter {
     @Override
     public void sort(Integer[] objectToSort) {
-        for (int i = 0; i < objectToSort.length - 1; i++) {
-            int minPos = i;
-            for (int j = i + 1; j < objectToSort.length; j++) {
-                if (objectToSort[j] < objectToSort[minPos]) {
-                    minPos = j;
+        int length = objectToSort.length;
+
+        for (int i = 0; i < length - 1; i++) {
+            int min = i;
+            for (int j = i + 1; j < length; j++) {
+                if (objectToSort[min] > objectToSort[j]) {
+                    min = j;
                 }
             }
-            swap(objectToSort, i, minPos);
+
+            swap(objectToSort, i, min);
         }
     }
 
-    private void swap(Integer[] arr, int i, int j) {
-        int temp = arr[j];
-        arr[j] = arr[i];
-        arr[i] = temp;
+    @Override
+    public Integer[] peek() {
+        return new Integer[0];
+    }
+
+    private void swap(Integer[] arr, int left, int right) {
+        int temp = arr[right];
+        arr[right] = arr[left];
+        arr[left] = temp;
     }
 }

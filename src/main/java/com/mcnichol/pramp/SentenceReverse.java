@@ -10,6 +10,7 @@ package com.mcnichol.pramp;
  * <p>
  * Explain your solution and analyze its time and space complexities.
  * <p>
+ * <p>
  * Example:
  * <p>
  * input:  arr = [ 'p', 'e', 'r', 'f', 'e', 'c', 't', '  ',
@@ -19,6 +20,7 @@ package com.mcnichol.pramp;
  * output: [ 'p', 'r', 'a', 'c', 't', 'i', 'c', 'e', '  ',
  * 'm', 'a', 'k', 'e', 's', '  ',
  * 'p', 'e', 'r', 'f', 'e', 'c', 't' ]
+ * <p>
  * <p>
  * Constraints:
  * [time limit] 5000ms

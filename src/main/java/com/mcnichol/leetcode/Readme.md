@@ -1,3 +1,6 @@
+#Companies:
+* [Yahoo](#yahoo)
+
 <table align="center">
     <tr><th colspan="4"><h2>Adobe(12)</h2></th></tr>
     <tr><th>ID</th><th>Name</th><th>% Accepted</th><th>Difficulty</th></tr>
@@ -602,8 +605,8 @@
     <tr><td>337</td><td>House Robber III</td><td>37.0%</td><td>Medium</td></tr>
 </table>
 
+## Yahoo
 <table align="center">
-    <tr><th colspan="4"><h2>Yahoo(11)</h2></th></tr>
     <tr><th>ID</th><th>Name</th><th>% Accepted</th><th>Difficulty</th></tr>
     <tr><td>1</td><td><a href="https://leetcode.com/problems/two-sum/#/description">Two Sum</a></td><td>23.0%</td><td>Easy</td></tr>
     <tr><td>4</td><td><a href="https://leetcode.com/problems/median-of-two-sorted-arrays/#/description">Median of Two Sorted Arrays</a></td><td>18.6%</td><td>Hard</td></tr>

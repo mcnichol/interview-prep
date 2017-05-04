@@ -18,7 +18,7 @@ public class SentenceReverseSolution {
         }
     }
 
-    public static void reverseString(char[] input) {
+    static void reverseString(char[] input) {
 
         mirrorReverse(input, 0, input.length - 1);
 

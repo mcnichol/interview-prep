@@ -1,4 +1,4 @@
-package com.mcnichol.pramp;
+package com.mcnichol.pramp.solutions;
 
 /**
  * Solution to PRAMP SentenceReverse Challenge

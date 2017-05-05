@@ -1,5 +1,6 @@
 package com.mcnichol.pramp;
 
+import com.mcnichol.pramp.solutions.SentenceReverseSolution;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

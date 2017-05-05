@@ -14,11 +14,11 @@ public class SentenceReverseSolution {
                 'p', 'r', 'a', 'c', 't', 'i', 'c', 'e'};
 
         for (char c : input) {
-            System.out.println(c);
+            System.out.print(c);
         }
     }
 
-    static void reverseString(char[] input) {
+    public static void reverseString(char[] input) {
 
         mirrorReverse(input, 0, input.length - 1);
 

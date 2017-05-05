@@ -13,17 +13,8 @@ import java.util.ArrayList;
  * Hints:
  * #44, #117, #132
  */
-public class CTCI_C01_Q01 {
+public class Ctci_C01Q01 {
     public boolean isUnique(String input){
-        ArrayList<Character> characterList = new ArrayList<>();
-        char[] c = input.toCharArray();
-
-        for (char aC : c) {
-            if (characterList.contains(aC)) {
-                return false;
-            }
-            characterList.add(aC);
-        }
-        return true;
+        return false;
     }
 }

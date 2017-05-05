@@ -8,11 +8,11 @@ import static org.junit.Assert.assertTrue;
 
 public class CTCI_C01_Q01_Test {
 
-    private CTCI_C01_Q01 ch01Q01;
+    private Ctci_C01Q01 ch01Q01;
 
     @Before
     public void setUp() throws Exception {
-        ch01Q01 = new CTCI_C01_Q01();
+        ch01Q01 = new Ctci_C01Q01();
     }
 
     @Test

@@ -25,6 +25,7 @@ public class SorterTesting {
         list.add(new Object[]{ShellSort.class});
         list.add(new Object[]{BubbleSort.class});
         list.add(new Object[]{MergeSort.class});
+        list.add(new Object[]{QuickSort.class});
 
         return list;
     }

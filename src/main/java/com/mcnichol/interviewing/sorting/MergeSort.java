@@ -19,7 +19,6 @@ public class MergeSort implements Sorter {
         int mid = (low + high) / 2;
         mergesort(arr, aux, low, mid); // Sort left half
         mergesort(arr, aux, mid + 1, high); // Sort right half
-        peek();
         merge(arr, aux, low, mid, high); // Merge them
     }
 

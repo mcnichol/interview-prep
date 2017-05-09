@@ -1,7 +1,7 @@
 package com.mcnichol.interviewing.sorting;
 
 public class QuickSort implements Sorter {
-    Integer[] state;
+    private Integer[] state;
 
     @Override
     public void sort(Integer[] objects) {

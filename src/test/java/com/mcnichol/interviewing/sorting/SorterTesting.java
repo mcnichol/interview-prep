@@ -24,6 +24,7 @@ public class SorterTesting {
         list.add(new Object[]{SelectionSort.class});
         list.add(new Object[]{InsertionSort.class});
         list.add(new Object[]{ShellSort.class});
+        list.add(new Object[]{BubbleSort.class});
 
         return list;
     }

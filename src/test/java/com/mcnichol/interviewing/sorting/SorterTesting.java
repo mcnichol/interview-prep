@@ -9,7 +9,6 @@ import org.junit.runners.Parameterized.Parameters;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-import java.util.Random;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
@@ -25,6 +24,7 @@ public class SorterTesting {
         list.add(new Object[]{InsertionSort.class});
         list.add(new Object[]{ShellSort.class});
         list.add(new Object[]{BubbleSort.class});
+        list.add(new Object[]{MergeSort.class});
 
         return list;
     }
@@ -83,7 +83,7 @@ public class SorterTesting {
     @Test
     public void sortsRandomListOf100() throws Exception {
         Integer[] objects = new Integer[100];
-        for(int i = 0; i < objects.length; i++){
+        for (int i = 0; i < objects.length; i++) {
             objects[i] = (int) (Math.random() * 100);
         }
 
@@ -91,7 +91,7 @@ public class SorterTesting {
 
         sorter.sort(objects);
 
-        for(int i =0; i < objects.length - 1; i++){
+        for (int i = 0; i < objects.length - 1; i++) {
             assertTrue(objects[i] <= objects[i + 1]);
         }
     }

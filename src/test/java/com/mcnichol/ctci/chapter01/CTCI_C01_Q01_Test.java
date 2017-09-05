@@ -27,6 +27,11 @@ public class CTCI_C01_Q01_Test {
 
     @Test
     public void detectsDuplicatesInString() {
-        assertFalse(ch01Q01.isUnique("abbcd"));
+        assertFalse(ch01Q01.isUnique("abcdb"));
+    }
+
+    @Test
+    public void detectsDuplicatesInString_withoutCheesing() {
+        assertFalse(ch01Q01.isUnique("aa"));
     }
 }

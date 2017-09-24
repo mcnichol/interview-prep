@@ -1,4 +1,4 @@
-package com.mcnichol.pramp.solutions;
+package com.mcnichol.pramp.solution;
 
 /**
  * Solution to PRAMP Drone Flight Planner Challenge

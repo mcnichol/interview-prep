@@ -1,17 +1,27 @@
 package com.mcnichol.pramp;
 
-import com.mcnichol.pramp.solutions.SentenceReverseSolution;
+import com.mcnichol.pramp.solution.SentenceReverseSolution;
+import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertArrayEquals;
 
 public class SentenceReverseSolutionTest {
+
+    private SentenceReverse sentenceReverse;
+
+    @Before
+    public void setUp() throws Exception {
+//        sentenceReverse = new SentenceReverseStub();
+        sentenceReverse = new SentenceReverseSolution();  // Comment this Line Out to implement your own solution
+    }
+
     @Test
     public void reversesString(){
         char[] input = "perfect makes practice".toCharArray();
         char[] expected = "practice makes perfect".toCharArray();
 
-        SentenceReverseSolution.reverseString(input);
+        sentenceReverse.reverseString(input);
 
         assertArrayEquals(expected, input);
     }
@@ -21,7 +31,7 @@ public class SentenceReverseSolutionTest {
         char[] input = "a".toCharArray();
         char[] expected = "a".toCharArray();
 
-        SentenceReverseSolution.reverseString(input);
+        sentenceReverse.reverseString(input);
 
         assertArrayEquals(expected, input);
     }
@@ -31,7 +41,7 @@ public class SentenceReverseSolutionTest {
         char[] input = "one".toCharArray();
         char[] expected = "one".toCharArray();
 
-        SentenceReverseSolution.reverseString(input);
+        sentenceReverse.reverseString(input);
 
         assertArrayEquals(expected, input);
     }

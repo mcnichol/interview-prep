@@ -1,4 +1,6 @@
-package com.mcnichol.pramp;
+package com.mcnichol.pramp.stub;
+
+import com.mcnichol.pramp.SentenceReverse;
 
 /**
  * You are given an array of characters arr that consists of sequences of characters
@@ -41,8 +43,23 @@ package com.mcnichol.pramp;
           (Splitting on spaces to detect word boundary, last word has no space)
  */
 
-public interface SentenceReverse {
-    void reverseString(char[] input);
+public class SentenceReverseStub implements SentenceReverse {
+
+    public static void main(String[] args) {
+        SentenceReverse stub = new SentenceReverseStub();
+        char[] input = {'p', 'e', 'r', 'f', 'e', 'c', 't', ' ',
+                'm', 'a', 'k', 'e', 's', ' ',
+                'p', 'r', 'a', 'c', 't', 'i', 'c', 'e'};
+
+        stub.reverseString(input);
+        for (char c : input) {
+            System.out.println(c);
+        }
+    }
+
+    public void reverseString(char[] input) {
+        // Your code goes here
+    }
 }
 
 

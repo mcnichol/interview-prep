@@ -1,4 +1,6 @@
-package com.mcnichol.pramp;
+package com.mcnichol.pramp.stub;
+
+import com.mcnichol.pramp.RootOfNumber;
 
 /**
  * Many times, we need to re-implement basic functions without using any standard
@@ -35,6 +37,14 @@ package com.mcnichol.pramp;
  * - 0 < n
  * [output] double
  */
-public interface RootOfNumber {
-    public double root(double value, int root);
+public class RootOfNumberStub implements RootOfNumber {
+    public static void main(String[] args) {
+        RootOfNumber stub = new RootOfNumberStub();
+        assert Math.abs(stub.root(7, 3) - 1.913) < .001 : "Not within threshold";
+        assert Math.abs(stub.root(9, 2) - 2.999) < .001 : "Not within threshold";
+    }
+
+    public double root(double x, int root) {
+        return 0d;
+    }
 }

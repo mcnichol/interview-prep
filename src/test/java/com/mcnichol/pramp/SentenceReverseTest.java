@@ -6,18 +6,20 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class SentenceReverseSolutionTest {
+public class SentenceReverseTest {
 
     private SentenceReverse sentenceReverse;
 
     @Before
     public void setUp() throws Exception {
-//        sentenceReverse = new SentenceReverseStub();
-        sentenceReverse = new SentenceReverseSolution();  // Comment this Line Out to implement your own solution
+        sentenceReverse = new SentenceReverseSolution();  // Remove this line and implement your own solution
+
+        // TODO Uncomment below stub and implement your own solution
+        // sentenceReverse = new SentenceReverseStub();
     }
 
     @Test
-    public void reversesString(){
+    public void reversesString() {
         char[] input = "perfect makes practice".toCharArray();
         char[] expected = "practice makes perfect".toCharArray();
 

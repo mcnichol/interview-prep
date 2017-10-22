@@ -14,9 +14,9 @@ public class AutoriTest {
     @Test
     public void canConvertNamesToInitials() throws Exception {
         OutputStream output = new ByteArrayOutputStream();
-        Autori autori = new Autori(convertToInputStream("Knuth-Morris-Pratt"), output);
+        new Autori(convertToInputStream("Knuth-Morris-Pratt"), output);
 
-        autori.main(new String[0]);
+        Autori.main(new String[0]);
 
         assertThat(String.valueOf(output), containsString("KMP"));
     }
@@ -24,9 +24,9 @@ public class AutoriTest {
     @Test
     public void canConvertMultipleNames() throws Exception {
         OutputStream output = new ByteArrayOutputStream();
-        Autori autori = new Autori(convertToInputStream("Mirko-Slavko"), output);
+        new Autori(convertToInputStream("Mirko-Slavko"), output);
 
-        autori.main(new String[0]);
+        Autori.main(new String[0]);
 
         assertThat(String.valueOf(output), containsString("MS"));
     }

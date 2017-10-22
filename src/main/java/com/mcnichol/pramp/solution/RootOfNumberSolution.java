@@ -8,7 +8,7 @@ import com.mcnichol.pramp.stub.RootOfNumberStub;
  *
  * @see RootOfNumberStub
  **/
-public class RootOfNumberSolution implements RootOfNumber{
+public class RootOfNumberSolution implements RootOfNumber {
     public static void main(String[] args) {
         RootOfNumber solution = new RootOfNumberSolution();
         assert Math.abs(solution.root(7, 3) - 1.913) < .001 : "Not within threshold";

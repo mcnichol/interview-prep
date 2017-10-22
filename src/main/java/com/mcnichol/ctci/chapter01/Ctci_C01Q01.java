@@ -26,9 +26,9 @@ public class Ctci_C01Q01 {
                 }
             }
         }
-        
+
         for (int i = 1; i < chars.length; i++) {
-            if(chars[i] == chars[i - 1]){
+            if (chars[i] == chars[i - 1]) {
                 isUnique = false;
                 break;
             }

@@ -1,6 +1,9 @@
 package com.mcnichol.interviewing.datastructure;
 
-import java.util.*;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
 
 public class CustomArrayList<E> implements List<E> {
 
@@ -61,7 +64,7 @@ public class CustomArrayList<E> implements List<E> {
         checkCapacity(inputSize);
 
         @SuppressWarnings("unchecked")
-        E[] a = (E[])c.toArray();
+        E[] a = (E[]) c.toArray();
 
         System.arraycopy(a, 0, elements, this.size, inputSize);
 
@@ -71,7 +74,7 @@ public class CustomArrayList<E> implements List<E> {
     }
 
     private void checkCapacity(int inputSize) {
-        if(elements.length - this.size < inputSize){
+        if (elements.length - this.size < inputSize) {
             grow();
         }
     }

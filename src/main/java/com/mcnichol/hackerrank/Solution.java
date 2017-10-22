@@ -34,6 +34,7 @@ public class Solution {
         }
 
     }
+
     public static int calculateLowerGlass(int colIndex, int rowIndex) {
         return 0;
     }

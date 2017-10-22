@@ -3,7 +3,7 @@ package com.mcnichol.interviewbit;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class MaxSumContiguousSubarrayTest {
     @Ignore

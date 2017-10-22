@@ -125,7 +125,7 @@ public class CustomArrayListTest {
     }
 
     @Test
-    public void growsDynamicallyWhenFull(){
+    public void growsDynamicallyWhenFull() {
         CustomArrayList<Object> elements = new CustomArrayList<>(2);
 
         elements.add(TEST_DATA_0);
@@ -136,7 +136,7 @@ public class CustomArrayListTest {
     }
 
     @Test
-    public void growsDynamicallyWhenAddingByIndex(){
+    public void growsDynamicallyWhenAddingByIndex() {
         CustomArrayList<Object> elements = new CustomArrayList<>(2);
         elements.add(TEST_DATA_0);
         elements.add(TEST_DATA_1);

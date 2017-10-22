@@ -1,7 +1,5 @@
 package com.mcnichol.interviewing.sorting;
 
-import java.util.ArrayList;
-
 public class ShellSort implements Sorter {
 
     @Override

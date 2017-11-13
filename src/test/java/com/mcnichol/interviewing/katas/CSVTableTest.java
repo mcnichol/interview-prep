@@ -89,8 +89,7 @@ public class CSVTableTest {
 
         List<String> strings = myCsvTable.toTable(inputStream);
 
-        int lengthOfHeaderRow = strings.get(0).length();
         int lengthOfFirstRow = strings.get(1).length();
-        assertTrue("Row Widths should be equal",lengthOfHeaderRow == lengthOfFirstRow);
+        assertThat(lengthOfFirstRow, equalTo(34));
     }
 }

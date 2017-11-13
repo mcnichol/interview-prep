@@ -2,11 +2,10 @@ package com.mcnichol.kattis;
 
 import org.junit.Test;
 
-import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
-import java.io.InputStream;
 import java.io.OutputStream;
 
+import static com.mcnichol.test.utils.TestUtil.convertToInputStream;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.MatcherAssert.assertThat;
 
@@ -31,7 +30,4 @@ public class AutoriTest {
         assertThat(String.valueOf(output), containsString("MS"));
     }
 
-    private InputStream convertToInputStream(String input) {
-        return new ByteArrayInputStream(input.getBytes());
-    }
 }

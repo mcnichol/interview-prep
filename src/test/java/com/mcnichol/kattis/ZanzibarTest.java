@@ -7,6 +7,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
 
+import static com.mcnichol.test.utils.TestUtil.convertToInputStream;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.MatcherAssert.assertThat;
 
@@ -14,13 +15,7 @@ public class ZanzibarTest {
 
     @Test
     public void name() throws Exception {
-        InputStream testInput = new ByteArrayInputStream((
-                "3\n" +
-                        "1 100 0\n" +
-                        "1 1 1 2 2 4 8 8 9 0\n" +
-                        "1 28 72 0\n"
-        ).getBytes());
-
+        InputStream testInput = convertToInputStream("3\n1 100 0\n1 1 1 2 2 4 8 8 9 0\n1 28 72 0\n");
         OutputStream acutalOutputStream = new ByteArrayOutputStream();
 
         Zanzibar zanzibar = new Zanzibar(testInput, acutalOutputStream);

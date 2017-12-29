@@ -1,8 +1,11 @@
 package com.mcnichol.interviewing.sorting;
 
 public class SelectionSort implements Sorter {
+    private Integer[] state;
+
     @Override
     public void sort(Integer[] objectToSort) {
+        this.state = objectToSort;
         int length = objectToSort.length;
 
         for (int i = 0; i < length - 1; i++) {
@@ -17,14 +20,14 @@ public class SelectionSort implements Sorter {
         }
     }
 
-    @Override
-    public Integer[] peek() {
-        return new Integer[0];
-    }
-
     private void swap(Integer[] arr, int left, int right) {
         int temp = arr[right];
         arr[right] = arr[left];
         arr[left] = temp;
+    }
+
+    @Override
+    public Integer[] peek() {
+        return state;
     }
 }

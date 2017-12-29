@@ -5,4 +5,5 @@ build
 out
 *.ipr
 *.iws
+*.iml
 bin/tmp

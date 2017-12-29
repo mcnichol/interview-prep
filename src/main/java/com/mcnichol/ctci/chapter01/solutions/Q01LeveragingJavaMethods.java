@@ -1,6 +1,9 @@
 package com.mcnichol.ctci.chapter01.solutions;
 
+import com.mcnichol.ctci.chapter01.Q01IsUnique;
+
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Cracking the Coding Interview: Arrays and Strings
@@ -13,9 +16,11 @@ import java.util.ArrayList;
  * Hints:
  * #44, #117, #132
  */
-public class Ctci__C01Q01 {
+public class Q01LeveragingJavaMethods implements Q01IsUnique{
     public boolean isUnique(String input) {
-        ArrayList<Character> characterList = new ArrayList<>();
+        if(input.length() > 128) return false;
+
+        List<Character> characterList = new ArrayList<>();
         char[] c = input.toCharArray();
 
         for (char aC : c) {
@@ -27,3 +32,4 @@ public class Ctci__C01Q01 {
         return true;
     }
 }
+

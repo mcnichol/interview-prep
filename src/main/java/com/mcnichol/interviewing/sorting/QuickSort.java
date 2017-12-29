@@ -7,7 +7,7 @@ public class QuickSort implements Sorter {
     public void sort(Integer[] objects) {
         this.state = objects;
 
-        quickSort(objects, 0, objects.length - 1);
+        quickSort(state, 0, state.length - 1);
     }
 
     private void quickSort(Integer[] arr, int left, int right) {
@@ -45,14 +45,8 @@ public class QuickSort implements Sorter {
         arr[right] = temp;
     }
 
-
     @Override
     public Integer[] peek() {
-        for (int i = 0; i < state.length; i++) {
-            System.out.print(state[i] + " ");
-        }
-        System.out.println();
-
-        return null;
+        return state;
     }
 }

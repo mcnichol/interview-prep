@@ -2,8 +2,12 @@ package com.mcnichol.interviewing.sorting;
 
 public class ShellSort implements Sorter {
 
+    private Integer[] state;
+
     @Override
     public void sort(Integer[] objectsToSort) {
+        this.state = objectsToSort;
+
         int currentGap = 1;
         //Set the starting gap that is less than size/3   (1, 4, 13, 40...)
         while (getInitialGap(currentGap) < objectsToSort.length / 3) {
@@ -39,6 +43,6 @@ public class ShellSort implements Sorter {
 
     @Override
     public Integer[] peek() {
-        return new Integer[0];
+        return state;
     }
 }

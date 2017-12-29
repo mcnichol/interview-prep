@@ -20,7 +20,7 @@ public class CSVTable {
                 Integer thisColumnSize = columnSize.get(i);
                 if (thisColumnSize != null) {
                     columnSize.put(i, rowSplitOnColumns[i].length() > thisColumnSize ? rowSplitOnColumns[i].length() : thisColumnSize);
-                }else{
+                } else {
                     columnSize.put(i, rowSplitOnColumns[i].length());
                 }
             }
@@ -36,7 +36,7 @@ public class CSVTable {
             sb.append("|");
         }
 
-        for(int i = 0; i < rows; i++){
+        for (int i = 0; i < rows; i++) {
             returnedTable.add(sb.toString());
         }
 

@@ -1,11 +1,6 @@
 package com.mcnichol.ctci.chapter01.solutions;
 
 import com.mcnichol.ctci.chapter01.Q01IsUnique;
-import com.mcnichol.interviewing.sorting.InsertionSort;
-import com.mcnichol.interviewing.sorting.MergeSort;
-import com.mcnichol.interviewing.sorting.QuickSort;
-import com.mcnichol.interviewing.sorting.Sorter;
-import com.sun.xml.internal.bind.v2.model.annotation.Quick;
 
 /**
  * Cracking the Coding Interview: Arrays and Strings
@@ -21,7 +16,7 @@ import com.sun.xml.internal.bind.v2.model.annotation.Quick;
  */
 public class Q01BruteForceInsertionSortAndCheckWithGuardClause implements Q01IsUnique {
     public boolean isUnique(String input) {
-        if(input.length() > 128) return false;
+        if (input.length() > 128) return false;
 
         boolean isUnique = true;
         char[] chars = input.toCharArray();

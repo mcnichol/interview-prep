@@ -43,13 +43,13 @@ public class MixedFractions {
         PrintStream printStream = new PrintStream(MixedFractions.outputStream);
 
         ArrayList<String> allTestCases = new ArrayList<>();
-        while(scanner.hasNext()){
+        while (scanner.hasNext()) {
             allTestCases.add(scanner.nextLine());
         }
 
         List<String> onlyTestCases = stripEndingTestSequence(allTestCases);
 
-        for(String testCase : onlyTestCases){
+        for (String testCase : onlyTestCases) {
             String[] fraction = testCase.split(" ");
             Integer numerator = Integer.valueOf(fraction[0]);
             Integer denominator = Integer.valueOf(fraction[1]);
@@ -67,7 +67,7 @@ public class MixedFractions {
     }
 
     private static List<String> stripEndingTestSequence(final ArrayList<String> allTestCases) {
-       return allTestCases.subList(0, allTestCases.size() - 1);
+        return allTestCases.subList(0, allTestCases.size() - 1);
     }
 
     /**

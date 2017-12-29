@@ -52,7 +52,7 @@ public class Zanzibar {
 
             String[] turtlePopulationForYear = testCase.split(" ");
             for (int i = 1; i < turtlePopulationForYear.length; i++) {
-                if(Integer.valueOf(turtlePopulationForYear[i]) > Integer.valueOf(turtlePopulationForYear[i-1]) * 2){
+                if (Integer.valueOf(turtlePopulationForYear[i]) > Integer.valueOf(turtlePopulationForYear[i - 1]) * 2) {
                     totalImmigratedTurtles += Integer.valueOf(turtlePopulationForYear[i]) - Integer.valueOf(turtlePopulationForYear[i - 1]) * 2;
                 }
             }

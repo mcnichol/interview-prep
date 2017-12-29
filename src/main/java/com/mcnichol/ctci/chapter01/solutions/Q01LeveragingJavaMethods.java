@@ -16,9 +16,9 @@ import java.util.List;
  * Hints:
  * #44, #117, #132
  */
-public class Q01LeveragingJavaMethods implements Q01IsUnique{
+public class Q01LeveragingJavaMethods implements Q01IsUnique {
     public boolean isUnique(String input) {
-        if(input.length() > 128) return false;
+        if (input.length() > 128) return false;
 
         List<Character> characterList = new ArrayList<>();
         char[] c = input.toCharArray();

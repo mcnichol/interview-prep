@@ -9,8 +9,8 @@ public class Multiples3And5 {
     public static void main(String[] args) {
         int accumulator = 0;
 
-        for(int i = 0; i < 1000; i++){
-            accumulator += (i % 3 == 0) || (i % 5 == 0)? i : 0;
+        for (int i = 0; i < 1000; i++) {
+            accumulator += (i % 3 == 0) || (i % 5 == 0) ? i : 0;
         }
 
         System.out.println(accumulator);

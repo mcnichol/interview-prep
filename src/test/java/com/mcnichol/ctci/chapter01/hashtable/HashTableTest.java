@@ -1,11 +1,10 @@
-package com.mcnichol.ctci.chapter01;
+package com.mcnichol.ctci.chapter01.hashtable;
 
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.equalTo;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertThat;
+import static org.junit.Assert.*;
 
 public class HashTableTest {
 
@@ -52,4 +51,5 @@ public class HashTableTest {
     public void canIncreaseHashTableSize() {
 
     }
+
 }

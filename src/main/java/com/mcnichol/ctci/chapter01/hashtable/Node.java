@@ -1,4 +1,4 @@
-package com.mcnichol.ctci.chapter01;
+package com.mcnichol.ctci.chapter01.hashtable;
 
 public class Node<K, V>{
     private K key;

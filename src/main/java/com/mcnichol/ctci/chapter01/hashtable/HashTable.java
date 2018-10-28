@@ -1,4 +1,4 @@
-package com.mcnichol.ctci.chapter01;
+package com.mcnichol.ctci.chapter01.hashtable;
 
 import java.util.LinkedList;
 import java.util.concurrent.atomic.AtomicReference;

@@ -12,7 +12,7 @@ public class HashTableTest {
 
     @Before
     public void setUp() throws Exception {
-        subject = new HashTable<String, Integer>();
+        subject = new HashTable<>();
     }
 
     @Test

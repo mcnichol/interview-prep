@@ -1,18 +1,19 @@
 package com.mcnichol.ctci.chapter01.hashtable;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 
 public class HashTable<K, V> {
     private static final int RADIX = 10;
     private int size;
-    private LinkedList [] table;
+    private List[] table;
 
     HashTable() {
-        this.table = new LinkedList[RADIX];
+        this.table = new ArrayList[RADIX];
 
         for (int i = 0; i < RADIX; i++) {
-            table[i] = new LinkedList<Node<K,V>>();
+            table[i] = new ArrayList<>();
         }
     }
 
@@ -24,7 +25,6 @@ public class HashTable<K, V> {
     void put(K key, V value) {
         size++;
         table[getHash(key) % RADIX].add(new Node(key, value));
-
     }
 
     @SuppressWarnings("unchecked")
@@ -32,12 +32,13 @@ public class HashTable<K, V> {
 
         AtomicReference<V> response = new AtomicReference<>();
 
-        LinkedList<Node<K,V>> linkedList = table[getHash(key) % RADIX];
-        linkedList.forEach((node) ->{
+        List<Node<K, V>> list = table[getHash(key) % RADIX];
+        list.forEach((node) -> {
             if (node.getKey().equals(key)) {
                 response.set(node.getValue());
             }
         });
+
         return response.get();
     }
 

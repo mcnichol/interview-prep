@@ -1,19 +1,19 @@
 package com.mcnichol.ctci.chapter01.hashtable;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.atomic.AtomicReference;
-
 public class HashTable<K, V> {
-    private static final int RADIX = 10;
+    private static final int DEFAULT_BUCKET_SIZE = 10;
     private int size;
-    private List[] table;
+    private Node[] table;
 
     HashTable() {
-        this.table = new ArrayList[RADIX];
+        this(DEFAULT_BUCKET_SIZE);
+    }
 
-        for (int i = 0; i < RADIX; i++) {
-            table[i] = new ArrayList<>();
+    HashTable(int bucketSize) {
+        this.table = new Node[bucketSize];
+
+        for (int i = 0; i < bucketSize; i++) {
+            table[i] = new Node();
         }
     }
 
@@ -24,26 +24,65 @@ public class HashTable<K, V> {
     @SuppressWarnings("unchecked")
     void put(K key, V value) {
         size++;
-        table[getHash(key) % RADIX].add(new Node(key, value));
+
+        Node<K, V> putNode = new Node<>(key, value);
+
+        int idx = getHash(key) % table.length;
+        Node nodeList = table[idx];
+
+        table[idx] = setLastNode(nodeList, putNode);
+    }
+
+    private Node<K, V> setLastNode(Node<K, V> node, Node<K, V> setNode) {
+        if (node == null) {
+            return setNode;
+        }
+
+        node.next = setLastNode(node.next, setNode);
+
+        return node;
     }
 
     @SuppressWarnings("unchecked")
     V get(K key) {
 
-        AtomicReference<V> response = new AtomicReference<>();
+        V response = null;
 
-        List<Node<K, V>> list = table[getHash(key) % RADIX];
-        list.forEach((node) -> {
-            if (node.getKey().equals(key)) {
-                response.set(node.getValue());
+        Node nodeTree = table[getHash(key) % table.length];
+
+        while (nodeTree.next != null) {
+            nodeTree = nodeTree.next;
+
+            if (nodeTree.key.equals(key)) {
+                response = (V) nodeTree.value;
+                break;
             }
-        });
+        }
 
-        return response.get();
+        return response;
     }
 
     private int getHash(K key) {
         return System.identityHashCode(key);
+    }
+
+    public void collisionDepth() {
+        for (int i = 0; i < table.length; i++) {
+            int depth = getDepth(table[i]);
+            System.out.println(depth);
+        }
+    }
+
+    private int getDepth(Node node) {
+        return countNext(node, 0);
+    }
+
+    private int countNext(Node node, int count) {
+        if (node.next == null) {
+            return count;
+        }
+
+        return count + countNext(node.next, ++count);
     }
 
 }

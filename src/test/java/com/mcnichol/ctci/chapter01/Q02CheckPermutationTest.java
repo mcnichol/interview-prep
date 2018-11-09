@@ -63,7 +63,7 @@ public class Q02CheckPermutationTest {
     @Test
     public void stringsWithDifferentChars_returnFalse() {
         String stringOne = "string";
-        String stringTwo = "grsnts";
+        String stringTwo = "abcdef";
 
         assertFalse(subject.isPermutation(stringOne, stringTwo));
     }

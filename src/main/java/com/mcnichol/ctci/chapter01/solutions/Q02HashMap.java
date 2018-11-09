@@ -4,7 +4,7 @@ import com.mcnichol.ctci.chapter01.Q02CheckPermutation;
 
 import java.util.HashMap;
 
-public class Q02HashMapSolution implements Q02CheckPermutation {
+public class Q02HashMap implements Q02CheckPermutation {
     @Override
     public boolean isPermutation(String stringOne, String stringTwo) {
         if (stringOne.length() != stringTwo.length()) {
@@ -13,8 +13,6 @@ public class Q02HashMapSolution implements Q02CheckPermutation {
 
         HashMap<Character, Integer> stringIntegerHashMap = new HashMap<>();
         for (int i = 0; i < stringOne.length(); i++) {
-            // Check if it is there first
-
             Integer integer = stringIntegerHashMap.get(stringOne.charAt(i));
             if (integer != null) {
                 stringIntegerHashMap.put(stringOne.charAt(i), integer + 1);

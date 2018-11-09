@@ -1,7 +1,7 @@
 package com.mcnichol.ctci.chapter01;
 
-import com.mcnichol.ctci.chapter01.solutions.Q02BruteForceSolution;
-import com.mcnichol.ctci.chapter01.solutions.Q02HashMapSolution;
+import com.mcnichol.ctci.chapter01.solutions.Q02BruteForce;
+import com.mcnichol.ctci.chapter01.solutions.Q02HashMap;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -25,8 +25,9 @@ public class Q02CheckPermutationTest {
     @Parameters(name = "{index}: Impl Class: {0}")
     public static Collection<Object[]> data() {
         return Arrays.asList(
-                new Object[]{Q02BruteForceSolution.class},
-                new Object[]{Q02HashMapSolution.class}
+                new Object[]{Q02BruteForce.class},
+                new Object[]{Q02HashMap.class},
+                new Object[]{Q02CharArrayHash.class}
         );
     }
 
@@ -44,7 +45,7 @@ public class Q02CheckPermutationTest {
     }
 
     @Test
-    public void stringsAreIdentifacl_arePermutatioins() {
+    public void stringsAreIdentical_arePermutations() {
         String stringOne = "string";
         String stringTwo = "string";
 

@@ -1,4 +1,4 @@
-package com.mcnichol.ctci.chapter01.hashtable;
+package com.mcnichol.interviewing.datastructure.hashtable;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -57,7 +57,7 @@ public class HashTableTest {
     }
 
     @Test
-    public void canInitializeHashTableWithBucketsForPerformance() throws InterruptedException {
+    public void canInitializeHashTableWithBucketsForPerformance() {
         double smallTableTime, bigTableTime;
         int SMALL_BUCKET_SIZE = 10;
         int BIG_BUCKET_SIZE = 10000;
@@ -83,17 +83,48 @@ public class HashTableTest {
         assertTrue(smallTableTime > bigTableTime);
     }
 
+    @Test
+    public void whenLoadFactorReaches_70percent_doubbleBuckets() {
+        // Load factor is f(N) = .70N where N is capacity
+
+        fail();
+    }
+
+    @Test
+    public void canRemoveFromHashTable() {
+        fail();
+    }
+
+    @Test
+    public void canProvideAlternativeCollisionResolution_chainingWithBST() {
+        fail();
+    }
+
+    @Test
+    public void canProvideAlternativeCollisionResolution_openAddressingWithLinearProbe() {
+        fail();
+    }
+
+    @Test
+    public void canProvideAlternativeCollisionResolution_openAddressingWithLinearProbe_implementsQuadraticHashing() {
+        fail();
+    }
+
+    @Test
+    public void canProvideAlternativeCollisionResolution_openAddressingWithLinearProbe_implementsDoubleHashing() {
+        fail();
+    }
+
     public double getElapsedTimeFactoringOutJavaOptimization(String s, Consumer<String> aMethod) {
-        long start, end;
         double numIterations = 10_000_000D;
 
-        start = System.nanoTime();
+        long loopStart = System.nanoTime();
         for (int i = 0; i < numIterations; i++) {
             aMethod.accept(s);
         }
-        end = System.nanoTime();
+        long loopEnd = System.nanoTime();
 
-        double average = (end - start) / numIterations;
+        double average = (loopEnd - loopStart) / numIterations;
         return average / 1_000_000_000D;
     }
 

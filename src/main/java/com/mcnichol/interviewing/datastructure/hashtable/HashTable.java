@@ -1,4 +1,4 @@
-package com.mcnichol.ctci.chapter01.hashtable;
+package com.mcnichol.interviewing.datastructure.hashtable;
 
 public class HashTable<K, V> {
     private static final int DEFAULT_BUCKET_SIZE = 10;

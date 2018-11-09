@@ -1,4 +1,4 @@
-package com.mcnichol.ctci.chapter01.hashtable;
+package com.mcnichol.interviewing.datastructure.hashtable;
 
 public class Node<K, V> {
     public K key;

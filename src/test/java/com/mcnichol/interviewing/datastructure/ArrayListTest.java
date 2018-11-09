@@ -5,13 +5,12 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.*;
 
-public class CustomArrayListTest {
+public class ArrayListTest {
 
     private static final String TEST_DATA_0 = "test-data-0";
     private static final String TEST_DATA_1 = "test-data-1";
@@ -24,7 +23,7 @@ public class CustomArrayListTest {
 
     @Before
     public void setUp() throws Exception {
-        customArrayList = new CustomArrayList<>();
+        customArrayList = new ArrayList<>();
     }
 
     @Test
@@ -50,7 +49,7 @@ public class CustomArrayListTest {
 
     @Test
     public void canTestIfListContainsCollection() throws Exception {
-        List<Object> elementsToCheck = new ArrayList<Object>() {{
+        List<Object> elementsToCheck = new java.util.ArrayList() {{
             add(TEST_DATA_0);
             add(TEST_DATA_1);
             add(TEST_DATA_2);
@@ -65,7 +64,7 @@ public class CustomArrayListTest {
 
     @Test
     public void canTestIfListContainsDuplicatesInCollection() throws Exception {
-        List<Object> elementsToCheck = new ArrayList<Object>() {{
+        List<Object> elementsToCheck = new java.util.ArrayList() {{
             add(TEST_DATA_0);
             add(TEST_DATA_1);
             add(TEST_DATA_1);
@@ -126,7 +125,7 @@ public class CustomArrayListTest {
 
     @Test
     public void growsDynamicallyWhenFull() {
-        CustomArrayList<Object> elements = new CustomArrayList<>(2);
+        ArrayList<Object> elements = new ArrayList<>(2);
 
         elements.add(TEST_DATA_0);
         elements.add(TEST_DATA_1);
@@ -137,7 +136,7 @@ public class CustomArrayListTest {
 
     @Test
     public void growsDynamicallyWhenAddingByIndex() {
-        CustomArrayList<Object> elements = new CustomArrayList<>(2);
+        ArrayList<Object> elements = new ArrayList<>(2);
         elements.add(TEST_DATA_0);
         elements.add(TEST_DATA_1);
 
@@ -148,7 +147,7 @@ public class CustomArrayListTest {
 
     @Test
     public void canAddCollection() throws Exception {
-        ArrayList<String> arrayList = new ArrayList<>();
+        java.util.ArrayList arrayList = new java.util.ArrayList();
         arrayList.add(TEST_DATA_0);
         arrayList.add(TEST_DATA_1);
 
@@ -160,7 +159,7 @@ public class CustomArrayListTest {
 
     @Test
     public void addingCollectionGreaterThanCapacityGrows() throws Exception {
-        ArrayList<String> arrayList = new ArrayList<>();
+        java.util.ArrayList arrayList = new java.util.ArrayList();
         arrayList.add("0");
         arrayList.add("1");
         arrayList.add("2");

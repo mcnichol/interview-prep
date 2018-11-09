@@ -1,15 +1,15 @@
 package com.mcnichol.interviewing.datastructure.hashtable;
 
-public class HashTable<K, V> {
+public class MyHashTable<K, V> {
     private static final int DEFAULT_BUCKET_SIZE = 10;
     private int size;
     private Node[] table;
 
-    HashTable() {
+    MyHashTable() {
         this(DEFAULT_BUCKET_SIZE);
     }
 
-    HashTable(int bucketSize) {
+    MyHashTable(int bucketSize) {
         this.table = new Node[bucketSize];
 
         for (int i = 0; i < bucketSize; i++) {

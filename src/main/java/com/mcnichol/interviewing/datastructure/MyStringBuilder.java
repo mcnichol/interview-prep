@@ -1,4 +1,4 @@
 package com.mcnichol.interviewing.datastructure;
 
-public class StringBuilder {
+public class MyStringBuilder {
 }

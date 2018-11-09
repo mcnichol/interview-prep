@@ -23,7 +23,7 @@ public class ArrayListTest {
 
     @Before
     public void setUp() throws Exception {
-        customArrayList = new ArrayList<>();
+        customArrayList = new MyArrayList<>();
     }
 
     @Test
@@ -125,7 +125,7 @@ public class ArrayListTest {
 
     @Test
     public void growsDynamicallyWhenFull() {
-        ArrayList<Object> elements = new ArrayList<>(2);
+        MyArrayList<Object> elements = new MyArrayList<>(2);
 
         elements.add(TEST_DATA_0);
         elements.add(TEST_DATA_1);
@@ -136,7 +136,7 @@ public class ArrayListTest {
 
     @Test
     public void growsDynamicallyWhenAddingByIndex() {
-        ArrayList<Object> elements = new ArrayList<>(2);
+        MyArrayList<Object> elements = new MyArrayList<>(2);
         elements.add(TEST_DATA_0);
         elements.add(TEST_DATA_1);
 

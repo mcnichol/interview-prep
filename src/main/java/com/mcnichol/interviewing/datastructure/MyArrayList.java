@@ -5,17 +5,17 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
-public class ArrayList<E> implements List<E> {
+public class MyArrayList<E> implements List<E> {
 
     private E[] elements;
     private int size;
 
-    public ArrayList() {
+    public MyArrayList() {
         this(10);
     }
 
     @SuppressWarnings("unchecked")
-    public ArrayList(int initialCapacity) {
+    public MyArrayList(int initialCapacity) {
         elements = (E[]) new Object[initialCapacity];
     }
 

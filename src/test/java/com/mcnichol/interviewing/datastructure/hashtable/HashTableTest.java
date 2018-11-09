@@ -15,11 +15,11 @@ import static org.junit.Assert.*;
 public class HashTableTest {
 
 
-    private HashTable<String, Integer> subject;
+    private MyHashTable<String, Integer> subject;
 
     @Before
     public void setUp() {
-        subject = new HashTable<>();
+        subject = new MyHashTable<>();
     }
 
     @Test
@@ -62,8 +62,8 @@ public class HashTableTest {
         int SMALL_BUCKET_SIZE = 10;
         int BIG_BUCKET_SIZE = 10000;
 
-        HashTable<String, Integer> smallHashTable = new HashTable<>(SMALL_BUCKET_SIZE);
-        HashTable<String, Integer> bigHashtTable = new HashTable<>(BIG_BUCKET_SIZE);
+        MyHashTable<String, Integer> smallHashTable = new MyHashTable<>(SMALL_BUCKET_SIZE);
+        MyHashTable<String, Integer> bigHashtTable = new MyHashTable<>(BIG_BUCKET_SIZE);
         List<String> strings = generateRandomStringKeys(1000);
 
         strings.forEach(string -> bigHashtTable.put(string, 10));

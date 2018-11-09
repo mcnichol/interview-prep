@@ -63,9 +63,10 @@ public class HashTable<K, V> {
     }
 
     private int getHash(K key) {
-        return System.identityHashCode(key);
+        return Math.abs(key.hashCode());
     }
 
+//    @Todo - Print in Columnar report
     public void collisionDepth() {
         for (int i = 0; i < table.length; i++) {
             int depth = getDepth(table[i]);

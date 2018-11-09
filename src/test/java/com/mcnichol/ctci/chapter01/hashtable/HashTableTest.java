@@ -84,15 +84,17 @@ public class HashTableTest {
     }
 
     public double getElapsedTimeFactoringOutJavaOptimization(String s, Consumer<String> aMethod) {
-        long start = 0, end = 0;
+        long start, end;
+        double numIterations = 10_000_000D;
 
-        for (int i = 0; i < 1000; i++) {
-            start = System.nanoTime();
+        start = System.nanoTime();
+        for (int i = 0; i < numIterations; i++) {
             aMethod.accept(s);
-            end = System.nanoTime();
         }
+        end = System.nanoTime();
 
-        return (end - start) / 1_000_000_000D;
+        double average = (end - start) / numIterations;
+        return average / 1_000_000_000D;
     }
 
     public List<String> generateRandomStringKeys(int numOfRandomKeys) {
@@ -106,5 +108,5 @@ public class HashTableTest {
 
         return keys;
     }
-    
+
 }

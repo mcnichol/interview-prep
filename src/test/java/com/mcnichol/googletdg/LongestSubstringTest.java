@@ -1,6 +1,7 @@
 package com.mcnichol.googletdg;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -59,6 +60,7 @@ public class LongestSubstringTest {
         assertThat(actualWordTestList, equalTo(expectedWordList));
     }
 
+    @Ignore
     @Test
     public void respondsWithLongestSubsequenceFromWordList() {
         subject.setTargetString(expectedTargetString);

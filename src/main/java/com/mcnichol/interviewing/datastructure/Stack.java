@@ -2,11 +2,12 @@ package com.mcnichol.interviewing.datastructure;
 
 public class Stack<T> {
     private T[] sarray;
-    private int TOP = 0;
+    private int TOP;
 
     @SuppressWarnings("unchecked")
     Stack() {
         this.sarray = (T[]) new Object[10];
+        TOP = 0;
     }
 
     public boolean isEmpty() {

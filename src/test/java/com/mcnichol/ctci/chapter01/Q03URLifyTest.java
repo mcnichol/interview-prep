@@ -56,12 +56,12 @@ public class Q03URLifyTest {
 
     @Test
     public void replacesWhiteSpaceWithEscapedValues() {
-        String expectedresult = "Mr%20John%20Smith";
+        String expectedResult = "Mr%20John%20Smith";
         char[] charString = "Mr John Smith".toCharArray();
 
-        String actualResult = subject.urlify(charString, charString.length);
+        String actualResult = subject.urlify(charString, 13);
 
-        assertThat(actualResult, equalTo(expectedresult));
+        assertThat(actualResult, equalTo(expectedResult));
     }
 
     @Test
@@ -69,7 +69,7 @@ public class Q03URLifyTest {
         char[] charString = "string   ".toCharArray();
         String expectedResult = "string";
 
-        String actualResult = subject.urlify(charString, charString.length);
+        String actualResult = subject.urlify(charString, 6);
 
         assertThat(actualResult, equalTo(expectedResult));
     }
